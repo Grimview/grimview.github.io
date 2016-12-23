@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/dewphoria
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://grimview.com
+  * I am dewphoria (https://keybase.io/dewphoria) on keybase.
+  * I have a public key ASAPN8E0eCrEK5GcAnofVKzRWgExnk-xpyImX83G7fQ-3Ao
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010188aeef3ece3af4cfe1f0070fd3f4fa72918eac45947a9d302972008095d9bd540a",
+            "host": "keybase.io",
+            "kid": "01200f37c134782ac42b919c027a1f54acd15a01319e4fb1a722265fcdc6edf43edc0a",
+            "uid": "58ae830cea9faf8cadc169d1a4821019",
+            "username": "dewphoria"
+        },
+        "service": {
+            "hostname": "grimview.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1482455423,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1482455318,
+        "hash": "6e2b5340b4ff71e3f49e4954183733a1bcd133e42eacc3693f87d146518faebfee2e3f5a09a8ec4a0527f26fd1e310dda9cd8a9ffb6a9bb0cf3025d0824af1c7",
+        "seqno": 772429
+    },
+    "prev": "8320effe6d7df3ea3dd780b961609518890fcfcadcc5a490d232d33377df619c",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDzfBNHgqxCuRnAJ6H1Ss0VoBMZ5PsaciJl/Nxu30PtwKp3BheWxvYWTFAvR7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxODhhZWVmM2VjZTNhZjRjZmUxZjAwNzBmZDNmNGZhNzI5MThlYWM0NTk0N2E5ZDMwMjk3MjAwODA5NWQ5YmQ1NDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMGYzN2MxMzQ3ODJhYzQyYjkxOWMwMjdhMWY1NGFjZDE1YTAxMzE5ZTRmYjFhNzIyMjY1ZmNkYzZlZGY0M2VkYzBhIiwidWlkIjoiNThhZTgzMGNlYTlmYWY4Y2FkYzE2OWQxYTQ4MjEwMTkiLCJ1c2VybmFtZSI6ImRld3Bob3JpYSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZ3JpbXZpZXcuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4MjQ1NTQyMywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDgyNDU1MzE4LCJoYXNoIjoiNmUyYjUzNDBiNGZmNzFlM2Y0OWU0OTU0MTgzNzMzYTFiY2QxMzNlNDJlYWNjMzY5M2Y4N2QxNDY1MThmYWViZmVlMmUzZjVhMDlhOGVjNGEwNTI3ZjI2ZmQxZTMxMGRkYTljZDhhOWZmYjZhOWJiMGNmMzAyNWQwODI0YWYxYzciLCJzZXFubyI6NzcyNDI5fSwicHJldiI6IjgzMjBlZmZlNmQ3ZGYzZWEzZGQ3ODBiOTYxNjA5NTE4ODkwZmNmY2FkY2M1YTQ5MGQyMzJkMzMzNzdkZjYxOWMiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxECs/HmTiL3IG5Y4k+t/OAAp64yDspuL1rlAMLnnGWZyH2F8ou1kq70GO3qWl9mZwBmJ6Z3ypNqYE31DF0PGs2cKqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg54ACyO86iEOqpfq8CtDHk2c8oGtC2dZNCr2kwT908tWjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dewphoria
+
+==================================================================
