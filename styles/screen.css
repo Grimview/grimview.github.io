@@ -1,0 +1,11 @@
+#logo {
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 509px;
+  height: 75px;
+}
+
+#logo:hover {
+  background-image: url('../images/logo_coloured.png');
+}
