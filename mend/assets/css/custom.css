@@ -1,0 +1,116 @@
+/* Color Variable */
+/* Function Variable */
+/* Header Area */
+
+/* Mend Logo */
+.m-logo {
+    padding: 8px 8px;
+    width: auto;
+    height: 96px;
+}
+.m-logo path {
+    fill: #ffffff;
+    
+}
+.m-logo:hover path {
+    fill: #64FFDA;
+}
+
+.ui.fixed.top.menu {
+  top: 5px;
+  justify-content: center;
+  border: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.ui.fixed.top.menu.slide.up {
+  top: -96px;
+}
+.ui.fixed.top.menu .item {
+  color: #27ae60;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.ui.fixed.top.menu .item.logo {
+  background-color: #03A9F4;
+  color: #f7fdff;
+  font-size: 20px;
+}
+.ui.fixed.top.menu .item.logo:hover {
+  background-color: #4FC3F7;
+}
+.ui.fixed.top.menu .item:hover {
+  background-color: #4FC3F7;
+  color: #f7fdff;
+}
+.ui.fixed.top.menu .item:before {
+  background: none;
+}
+.ui.fixed.top.menu .item.icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .ui.fixed.top.menu .item:not(.icon) {
+    display: none;
+  }
+  .ui.fixed.top.menu .item.icon {
+    display: block;
+  }
+}
+
+.progress.bar {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  height: 20px;
+  width: 100%;
+  background-color: #4FC3F7;
+}
+
+/* Content Area */
+body {
+  padding-top: 96px;
+}
+
+/* Footer Area */
+.container.footer {
+  background-color: #2cc36b;
+  color: #f7fdff;
+  margin-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.container.footer .header {
+  color: #f7fdff;
+}
+.ui.list a.item {
+  color: #f7fdff;
+}
+.ui.list a.item:hover {
+  color: #f7fdff;
+}
+.copyright {
+  background-color: #f7fdff;
+  text-align: center;
+  padding: 20px;
+}
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 101;
+  background-color: #36d278;
+}
+#toTop i {
+  font-size: 25px;
+  color: #f7fdff;
+}
+
+.white {
+    color: white;
+}
