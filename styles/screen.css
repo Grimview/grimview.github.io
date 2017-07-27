@@ -4,8 +4,7 @@ body {
 
 div#masthead {
     font-family: monospace;
-    width: 381px;
-    height: 96px;
+    width: 256px;
     margin: 128px auto;
     text-align: center;
 }
