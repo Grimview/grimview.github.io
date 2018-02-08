@@ -1,0 +1,151 @@
+@import url(spectre.min.css);
+@import url(spectre-icons.min.css);
+@import url(spectre-exp.min.css);
+/* line 5, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+body {
+  background: #eeeeee;
+}
+
+/* line 9, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+button.download {
+  margin-right: 24px;
+}
+
+/* line 12, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+button.download.last {
+  margin-right: 0;
+}
+
+/* line 16, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+button.download h6 {
+  display: inline;
+  margin-left: 4px;
+}
+
+/* line 22, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+.navbar {
+  background: #ffffff;
+  padding: 16px;
+}
+
+/* line 27, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+.navbar .navbar-center img {
+  width: 32px;
+}
+
+/* line 33, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#carousel-container {
+  padding: 0;
+}
+
+/* line 36, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#carousel-container .carousel {
+  max-height: 512px;
+}
+
+/* line 39, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#carousel-container .carousel .item-prev {
+  top: 25%;
+}
+
+/* line 43, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#carousel-container .carousel .item-next {
+  top: 25%;
+}
+
+/* line 49, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#masthead {
+  position: absolute;
+  z-index: 200;
+  top: 144px;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, 0);
+}
+
+/* line 57, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#masthead #action {
+  padding-right: 24px;
+  text-align: right;
+}
+
+/* line 61, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#masthead #action h1 {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 100;
+  font-size: 2.5rem;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/* line 70, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#masthead #image {
+  padding-left: 24px;
+  text-align: left;
+}
+
+/* line 74, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#masthead #image img {
+  width: 90%;
+}
+
+/* line 80, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#main-content {
+  color: #777777;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* line 85, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#main-content h1 {
+  font-weight: 400;
+  font-variant-caps: all-small-caps;
+  margin-top: 48px;
+  margin-bottom: 64px;
+}
+
+/* line 92, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#main-content h4 {
+  font-weight: 400;
+  font-variant-caps: all-small-caps;
+}
+
+/* line 97, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#main-content p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 102, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#main-content .head-icon {
+  margin: 0 auto;
+  width: 88px;
+  height: 88px;
+  padding: 20px;
+  background: #dddddd;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  border: 1px solid #cccccc;
+}
+
+/* line 112, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+#main-content .head-icon img {
+  width: 100%;
+}
+
+/* line 118, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+footer {
+  background: #8c5685;
+  color: #eeeeee;
+  padding: 2px;
+  text-align: center;
+}
+
+/* line 124, C:/Users/auths/Documents/apps/json-viewer/landing-page/css/src/main.scss */
+footer p {
+  font-variant-caps: all-small-caps;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=../main.map */
