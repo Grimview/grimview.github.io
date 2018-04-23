@@ -1,0 +1,36 @@
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+#info {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+#info a {
+    color: #66F;
+    text-decoration: none;
+}
+
+#info a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    background: #666666;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ffffff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}

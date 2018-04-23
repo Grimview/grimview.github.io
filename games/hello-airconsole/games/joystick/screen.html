@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link rel="stylesheet" href="styles/screen.css">
+    </head>
+
+    <body onload="init()">
+        <canvas id="canvas"></canvas>
+
+        <script src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
+        <script type="text/javascript">
+            var airconsole;
+            var canvas;
+            var last = null;
+      
+            /**
+             * Sets up the communication to game pads.
+             */
+            function setupConsole() {
+              airconsole = new AirConsole();
+      
+              airconsole.onConnect = function(device_id) {
+                checkTwoPlayers();
+              };
+      
+              airconsole.onDisconnect = function(device_id) {
+                var player = airconsole.convertDeviceIdToPlayerNumber(device_id);
+                if (player != undefined) {
+                  // Player that was in game left the game.
+                  // Setting active players to length 0.
+                  airconsole.setActivePlayers(0);
+                }
+                checkTwoPlayers();
+              };
+      
+              airconsole.onMessage = function(device_id, data) {
+                var player = airconsole.convertDeviceIdToPlayerNumber(device_id);
+                //if (player != undefined && data.move !== undefined) {
+                  //paddles[player].move.y = data.move;
+                //}
+              };
+      
+            }
+      
+            /**
+             * Checks if two players are connected!
+             */
+            function checkTwoPlayers() {
+              var active_players = airconsole.getActivePlayerDeviceIds();
+              var connected_controllers = airconsole.getControllerDeviceIds();
+              // Only update if the game didn't have active players.
+              if (active_players.length == 0) {
+                if (connected_controllers.length >= 2) {
+                  // Enough controller devices connected to start the game.
+                  // Setting the first 2 controllers to active players.
+                  airconsole.setActivePlayers(2);
+                  document.getElementById("wait").innerHTML = "";
+                } else if (connected_controllers.length == 1) {
+                  document.getElementById("wait").innerHTML = "Need 1 more player!";
+                } else if (connected_controllers.length == 0) {
+                  document.getElementById("wait").innerHTML = "Need 2 more players!";
+                }
+              }
+            }
+      
+            /**
+             * Sends a message to the device that it should vibrate;
+             */
+            function vibrate(player) {
+              airconsole.message(
+                  airconsole.convertPlayerNumberToDeviceId(player),
+                  { vibrate: 1000 })
+            }
+      
+            /**
+             * body.onload function.
+             */
+            function init() {
+                setupConsole();
+
+                // Setting up the game. Nothing AirConsole specific.
+
+                canvas = document.getElementById("canvas");
+                //canvas.width = canvas.clientWidth;
+                //canvas.height = canvas.clientHeight;
+
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                if (canvas.getContext) {
+                    var context = canvas.getContext('2d');
+
+                    context.fillText('Hello', 50, 50);
+                }
+
+                window.onresize = (clearCanvas);
+                last = new Date().getTime();
+                loop();
+            }
+      
+            /**
+             * Moving the ball and drawing the canvas. Nothing AirConsole specific.
+             */
+            function loop() {
+              var now = new Date().getTime();
+              var delta = (now - last);
+              delta = Math.min(20, delta);
+              delta /= 1000;
+              last = now;
+      
+              requestAnimationFrame(loop);
+            }
+      
+            /**
+             * Reseting the ball. Nothing Game Console specific.
+             * @param move_x
+             * @param move_y
+             */
+            function clearCanvas() {
+              var ctx = canvas.getContext("2d");
+              ctx.fillStyle = "black";
+              canvas.width = canvas.clientWidth;
+              canvas.height = canvas.clientHeight;
+              ctx.fillRect(0,0, canvas.width, canvas.height);
+            }
+        </script>
+    </body>
+</html>

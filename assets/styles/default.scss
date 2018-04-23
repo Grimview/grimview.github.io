@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700|Tulpen+One');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #CFD8DC;
+}
+
+nav {
+    position: fixed;
+    color: #eeeeee;
+    padding: 0.8rem;
+    width: calc(100% - 1.6rem);
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    transition: background-color 300ms, fill 300ms, color 150ms ease-in-out;
+
+    ul {
+        display: inline-block;
+        list-style: none;
+        height: 22px;
+        float: right;
+        user-select: none;
+
+        &#social-icons {
+            li {
+                display: inline;
+                margin: 0 0.4rem;
+
+                svg {
+                    width: 22px;
+                    height: 22px;
+                    fill: #eeeeee;
+                    transition: fill 150ms ease-in-out;
+                    
+                    &:hover {
+                        transition: fill 150ms ease-in-out;
+                    }
+                }
+            }
+        }
+        
+        &#links {
+            margin: 0 0.6rem;
+            
+            li {
+                display: inline;
+                font-size: 1.1rem;
+                margin: 0 1.2rem;
+                cursor: default;
+            }
+        }
+    }
+}
+
+header {
+    &#masthead {
+        background: linear-gradient(45deg, #64acce, #b46c6c, #8392e4);
+        background-size: 600% 600%;
+        animation: Glimmer 59s ease infinite;
+        font-family: 'Unica One', cursive;
+        width: 100%;
+        padding: 3.2rem 0;
+        text-align: center;
+
+        img {
+            background: rgba(255, 255, 255, 0.07);
+            padding: 0.8rem;
+        }
+
+        h1 {
+            margin-top: 0.8rem;
+            color: rgba(255, 255, 255, 0.55);
+            font-family: 'Tulpen One', cursive;
+            text-transform: uppercase;
+            font-size: 3.6rem;
+        }
+    }
+}
+
+@keyframes Glimmer { 
+    0% {
+        background-position: 0% 67%;
+    }
+
+    50% {
+        background-position: 100% 34%;
+    }
+    100% {
+        background-position: 0% 67%;
+    }
+}
+
+main {
+    &#content {
+        background: #ECEFF1;
+        max-width: 1024px;
+        margin: 0 auto;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+
+        h1 {
+            padding: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1.6rem;
+            padding: 0.8rem;
+        }
+
+        section {
+            &#about, &#projects, &#contact {
+                padding: 1.6rem;
+
+                h2 {
+                    text-align: center;
+                    font-family: 'Cabin';
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    color: #999999;
+                }
+
+                p {
+                    padding: 0;
+                    margin-bottom: 0;
+                    margin-top: 1.6rem;
+                    text-align: center;
+                    font-family: 'Cabin';
+                    font-size: 1rem;
+                    color: #212121
+                }
+
+                ul {
+                    list-style: none;
+                    margin-top: 1.6rem;
+
+                    li {
+                        width: 25%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    font-family: 'Cabin', sans-serif;
+    color: #666666;
+    padding: 3.2rem 0;
+    text-align: center;
+}

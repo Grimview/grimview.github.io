@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link rel="stylesheet" href="styles/controller.css">
+    </head>
+
+    <body onload="init()">
+        <div id="container"></div>
+        <div id="info">
+            <span id="result"></span>
+        </div>
+
+        <script src="virtualjoystick.js"></script>
+        <script>
+            console.log("touchscreen is", VirtualJoystick.touchScreenAvailable() ? "available" : "not available");
+	
+            var joystick = new VirtualJoystick({
+                container: document.getElementById('container'),
+                mouseSupport: true,
+            });
+
+            joystick.addEventListener('touchStart', function() {
+                console.log('down')
+            });
+
+            joystick.addEventListener('touchEnd', function() {
+                console.log('up')
+            });
+
+            setInterval(function(){
+                var outputEl	= document.getElementById('result');
+                outputEl.innerHTML	= '<b>Result:</b> '
+                    + ' dx:'+joystick.deltaX()
+                    + ' dy:'+joystick.deltaY()
+                    + (joystick.right()	? ' right'	: '')
+                    + (joystick.up()	? ' up'		: '')
+                    + (joystick.left()	? ' left'	: '')
+                    + (joystick.down()	? ' down' 	: '')	
+            }, 1/30 * 1000);
+        </script>
+
+        <script src="https://www.airconsole.com/api/airconsole-1.7.0.js"></script>
+        <script type="text/javascript">
+            navigator.vibrate = (navigator.vibrate ||
+                                 navigator.webkitVibrate ||
+                                 navigator.mozVibrate ||
+                                 navigator.msVibrate);
+        
+            var airconsole;
+            /**
+             * Sets up the communication to the screen.
+             */
+            function init() {
+              airconsole = new AirConsole({"orientation": "landscape"});
+        
+              /*
+               * Checks if this device is part of the active game.
+               */
+              airconsole.onActivePlayersChange = function(player) {
+                var div = document.getElementById("player_id");
+                if (player !== undefined) {
+                  div.innerHTML =  (["Left Player", "Right Player"][player]);
+                } else {
+                  div.innerHTML = "It's a 2 player game!";
+                }
+              };
+        
+              /*
+               * Makes the device vibrate if the screen says so.
+               */
+              airconsole.onMessage = function(from, data) {
+                if (from == AirConsole.SCREEN && data.vibrate) {
+                  navigator.vibrate(data.vibrate);
+                  console.log("Vibrating: " + data.vibrate);
+                }
+              };
+            }
+        
+            /**
+             * Tells the screen to move the paddle of this player.
+             * @param amount
+             */
+            function move(amount) {
+              airconsole.message(AirConsole.SCREEN, {move: amount})
+            }
+        </script>
+    </body>
+</html>

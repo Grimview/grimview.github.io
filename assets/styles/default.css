@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,700|Tulpen+One");
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #CFD8DC; }
+
+nav {
+  position: fixed;
+  color: #eeeeee;
+  padding: 0.8rem;
+  width: calc(100% - 1.6rem);
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  text-align: right;
+  -webkit-transition: background-color 300ms, fill 300ms, color 150ms ease-in-out;
+  -o-transition: background-color 300ms, fill 300ms, color 150ms ease-in-out;
+  transition: background-color 300ms, fill 300ms, color 150ms ease-in-out; }
+  nav ul {
+    display: inline-block;
+    list-style: none;
+    height: 22px;
+    float: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    nav ul#social-icons li {
+      display: inline;
+      margin: 0 0.4rem; }
+      nav ul#social-icons li svg {
+        width: 22px;
+        height: 22px;
+        fill: #eeeeee;
+        -webkit-transition: fill 150ms ease-in-out;
+        -o-transition: fill 150ms ease-in-out;
+        transition: fill 150ms ease-in-out; }
+        nav ul#social-icons li svg:hover {
+          -webkit-transition: fill 150ms ease-in-out;
+          -o-transition: fill 150ms ease-in-out;
+          transition: fill 150ms ease-in-out; }
+    nav ul#links {
+      margin: 0 0.6rem; }
+      nav ul#links li {
+        display: inline;
+        font-size: 1.1rem;
+        margin: 0 1.2rem;
+        cursor: default; }
+
+header#masthead {
+  background: -webkit-linear-gradient(45deg, #64acce, #b46c6c, #8392e4);
+  background: -o-linear-gradient(45deg, #64acce, #b46c6c, #8392e4);
+  background: linear-gradient(45deg, #64acce, #b46c6c, #8392e4);
+  background-size: 600% 600%;
+  -webkit-animation: Glimmer 59s ease infinite;
+  animation: Glimmer 59s ease infinite;
+  font-family: 'Unica One', cursive;
+  width: 100%;
+  padding: 3.2rem 0;
+  text-align: center; }
+  header#masthead img {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 0.8rem; }
+  header#masthead h1 {
+    margin-top: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-family: 'Tulpen One', cursive;
+    text-transform: uppercase;
+    font-size: 3.6rem; }
+
+@-webkit-keyframes Glimmer {
+  0% {
+    background-position: 0% 67%; }
+  50% {
+    background-position: 100% 34%; }
+  100% {
+    background-position: 0% 67%; } }
+
+@keyframes Glimmer {
+  0% {
+    background-position: 0% 67%; }
+  50% {
+    background-position: 100% 34%; }
+  100% {
+    background-position: 0% 67%; } }
+
+main#content {
+  background: #ECEFF1;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
+  main#content h1 {
+    padding: 0.8rem; }
+  main#content p {
+    margin-bottom: 1.6rem;
+    padding: 0.8rem; }
+  main#content section#about, main#content section#projects, main#content section#contact {
+    padding: 1.6rem; }
+    main#content section#about h2, main#content section#projects h2, main#content section#contact h2 {
+      text-align: center;
+      font-family: 'Cabin';
+      font-weight: 400;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: #999999; }
+    main#content section#about p, main#content section#projects p, main#content section#contact p {
+      padding: 0;
+      margin-bottom: 0;
+      margin-top: 1.6rem;
+      text-align: center;
+      font-family: 'Cabin';
+      font-size: 1rem;
+      color: #212121; }
+    main#content section#about ul, main#content section#projects ul, main#content section#contact ul {
+      list-style: none;
+      margin-top: 1.6rem; }
+      main#content section#about ul li, main#content section#projects ul li, main#content section#contact ul li {
+        width: 25%; }
+        main#content section#about ul li img, main#content section#projects ul li img, main#content section#contact ul li img {
+          width: 100%; }
+
+footer {
+  font-family: 'Cabin', sans-serif;
+  color: #666666;
+  padding: 3.2rem 0;
+  text-align: center; }
