@@ -1,0 +1,32 @@
+body {
+  background: #450818;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: #eeeeee;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin: 2.4rem 0;
+  font-size: 1.6rem;
+}
+
+h1#week {
+  font-size: 4rem;
+}
+
+img {
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
+  height: 60%;
+}
+
+.back-button {
+  color: #eeeeee;
+  transition: background 200ms, color 200ms, transform 80ms ease-in-out;
+}
+
+.back-button:hover {
+  color: #212121;
+}
